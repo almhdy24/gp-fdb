@@ -1,0 +1,10 @@
+{
+  "insert": [
+    {"type":"user","data":{"name":"Alice","age":30}},
+    {"type":"user","data":{"name":"Bob","age":20}}
+  ],
+  "queries": [
+    {"field":"age","op":">","value":25,"expect_ids":[1]},
+    {"text":"alice","expect_ids":[1]}
+  ]
+}
